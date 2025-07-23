@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Takugéi Flowers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#ff6b00',
+            dark: '#1f1f1f',
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="font-body text-gray-700 bg-[#f6f9fc]">
+
+  <header class="bg-[#f6f9fc] py-4">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-2">
+        <img src="./assets/logo.png" alt="logo" class="w-8 h-8"/>
+        <span class="font-heading text-2xl font-semibold text-brand">Takugéi</span>
+      </a>
+   
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="#home" class="hover:text-brand transition">Home</a>
+        <a href="#plants" class="hover:text-brand transition">Shop</a>
+        <a href="#about" class="hover:text-brand transition">About us</a>
+        <div class="flex items-center space-x-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3v.75h15.75m-12.75-3.75h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.4M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          <span>Cart ($56)</span>
+        </div>
+      </nav>
+  
+      <div class="md:hidden flex items-center space-x-2">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3v.75h15.75m-12.75-3.75h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.4M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+        </svg>
+
+        <span class="text-sm font-medium">Cart ($56)</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section id="home" class="max-w-6xl mx-auto px-4 py-14 grid md:grid-cols-2 gap-10 items-center">
+
+    <div class="order-2 md:order-1">
+      <h1 class="font-heading text-5xl md:text-6xl leading-tight font-extrabold text-dark">
+        ALWAYS <span class="text-brand">FRESH</span><br/> FLOWERS
+      </h1>
+      <p class="mt-6 max-w-md">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
+    </div>
+ 
+    <div class="order-1 md:order-2 flex justify-end">
+      <img src="./assets/hero-flower.png" alt="flowers" class="w-full max-w-sm md:max-w-md" />
+    </div>
+  </section>
+
+  
 </body>
 </html>
