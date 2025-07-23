@@ -17,12 +17,58 @@
     object-fit:cover;
   }
 
-  
+.deal-card{
+    position:relative;
+    border-radius:14px;
+    overflow:hidden;
+  }
+  .deal-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .deal-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.35);
+    color:#fff;
+    font-family:'Poppins',sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:12px;
+  }
+  .deal-overlay.big{
+    border-radius:14px;
+  }
+  .deal-off{
+    font-weight:700;
+    line-height:1.2;
+  }
+  .deal-btn{
+    display:inline-block;
+    margin-top:8px;
+    padding:6px 18px;
+    border-radius:6px;
+    font-size:18px;
+    font-weight:600;
+    text-decoration: underline;
+  }
 
 
   @media (max-width:767px){
     .trusted-badge{ display:none; }
   }
+
+    .join-bg{
+  background-image: url("./assets/news-letter-bg.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 
