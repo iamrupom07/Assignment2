@@ -4,4 +4,26 @@
     padding: 0px;
 }
 
+.trusted-badge{
+  position: absolute;
+  top: -120px;          
+  left: 95%;
+  transform: translateX(-50%);
+  width: 250px;
+  z-index: 5;
+}
+
+  .lover-img{
+    object-fit:cover;
+  }
+
+  
+
+
+  @media (max-width:767px){
+    .trusted-badge{ display:none; }
+  }
+
+
+
 
